@@ -12,10 +12,10 @@ export async function loadHeaderFooter() {
     const headerTitle = document.getElementById('header-title'); // ID of the dynamically injected header title element
     if (headerTitle) {
         switch (window.location.pathname) {
-            case 'https://admirable-queijadas-6374e0.netlify.app/create-recipe/':
+            case '/create-recipe/':
                 headerTitle.textContent = 'The CookBook : Create Recipe';
                 break;
-            case 'https://admirable-queijadas-6374e0.netlify.app/find-recipe/':
+            case '/find-recipe/':
                 headerTitle.textContent = 'The CookBook : Find Recipe';
                 break;
             default:
