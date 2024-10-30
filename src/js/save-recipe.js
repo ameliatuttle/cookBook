@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('recipes', JSON.stringify(recipes));
     
                 alert("Recipe saved! Go to the homepage to see your recipe.");
-                window.location.href = '/index.html';
             };
     
             if (image) {
