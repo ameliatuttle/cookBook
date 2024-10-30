@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Recipe</title>
+  <script type="module" crossorigin src="/assets/findRecipe-BFXxHrot.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/style-C6L-mt3c.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-DR81daYe.css">
+</head>
+<body>
+    <header class="divider" id="main-header"></header>
+    <main>
+        <h2>Sort Recipes by Type</h2>
+        <select id="recipeType">
+            <option value="">-- Select Recipe Type --</option>
+            <option value="main course">Main Course</option>
+            <option value="side dish">Side Dish</option>
+            <option value="dessert">Dessert</option>
+            <option value="appetizer">Appetizer</option>
+            <option value="salad">Salad</option>
+            <option value="bread">Bread</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="soup">Soup</option>
+            <option value="beverage">Beverage</option>
+            <option value="sauce">Sauce</option>
+            <option value="marinade">Marinade</option>
+            <option value="fingerfood">Finger Food</option>
+            <option value="snack">Snack</option>
+            <option value="drink">Drink</option>
+        </select>
+        <button id="searchRecipes">Find Recipes</button>
+        
+        <div id="recipeResults"></div>
+        <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+    </main>
+    <footer id="main-footer"></footer>
+</body>
+</html>
