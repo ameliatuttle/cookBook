@@ -12,10 +12,10 @@ export async function loadHeaderFooter() {
     const headerTitle = document.getElementById('header-title'); // ID of the dynamically injected header title element
     if (headerTitle) {
         switch (window.location.pathname) {
-            case '/create-recipe/':
+            case '/create-recipe/index.html':
                 headerTitle.textContent = 'The CookBook : Create Recipe';
                 break;
-            case '/find-recipe/':
+            case '/find-recipe/index.html':
                 headerTitle.textContent = 'The CookBook : Find Recipe';
                 break;
             default:
