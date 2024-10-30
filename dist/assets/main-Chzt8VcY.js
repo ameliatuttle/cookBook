@@ -1,4 +1,4 @@
-import"./style-C6L-mt3c.js";document.addEventListener("DOMContentLoaded",()=>{const n=document.getElementById("stickyNotesContainer");(JSON.parse(localStorage.getItem("recipes"))||[]).forEach(t=>{const e=document.createElement("div");e.classList.add("sticky-note"),e.style.backgroundColor=t.type==="create"?"lightblue":"lightgreen",t.type==="create"?e.innerHTML=`
+import"./style-BBMR6zam.js";document.addEventListener("DOMContentLoaded",()=>{const n=document.getElementById("stickyNotesContainer");(JSON.parse(localStorage.getItem("recipes"))||[]).forEach(t=>{const e=document.createElement("div");e.classList.add("sticky-note"),e.style.backgroundColor=t.type==="create"?"lightblue":"lightgreen",t.type==="create"?e.innerHTML=`
                 <h3>${t.title||""}</h3>
                 <p>${t.description||"No description provided."}</p>
                 ${t.image?`<img src="${t.image}" alt="${t.title} Image" class="sticky-image">`:""}
