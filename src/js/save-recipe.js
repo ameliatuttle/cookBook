@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     title,
                     description,
                     image: imageUrl,
-                    type: 'create' // Tagging to identify this as a 'create recipe' sticky
+                    type: 'create'
                 };
     
                 let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('recipes', JSON.stringify(recipes));
     
                 alert("Recipe saved! Go to the homepage to see your recipe.");
-                window.location.href = 'src/index.html'; // Redirect to home after saving
+                window.location.href = 'src/index.html';
             };
     
             if (image) {

@@ -2,7 +2,7 @@ document.getElementById('searchRecipes').addEventListener('click', function() {
     const type = document.getElementById('recipeType').value;
 
     if (type) {
-        showSpinner(); // Show the spinner when starting the fetch
+        showSpinner();
         fetchRecipesByType(type);
     } else {
         alert('Please select a recipe type.');
@@ -21,18 +21,18 @@ function fetchRecipesByType(type) {
             return response.json();
         })
         .then(data => {
-            hideSpinner(); // Hide the spinner after fetching
+            hideSpinner();
             displayRecipes(data.results);
         })
         .catch(error => {
-            hideSpinner(); // Hide the spinner in case of error
+            hideSpinner();
             console.error('Error fetching data:', error);
         });
 }
 
 function displayRecipes(recipes) {
     const resultsDiv = document.getElementById('recipeResults');
-    resultsDiv.innerHTML = ''; // Clear previous results
+    resultsDiv.innerHTML = '';
 
     if (recipes.length === 0) {
         resultsDiv.innerHTML = '<p>No recipes found for this type.</p>';
@@ -69,7 +69,7 @@ function displayRecipeCard(cardUrl, recipeId) {
     const resultsDiv = document.getElementById('recipeResults');
     resultsDiv.innerHTML = `<img src="${cardUrl}" alt="Recipe Card">`;
 
-    // Create the "Add to Home" button
+    //Make an "Add to Home" button
     const addButton = document.createElement('button');
     addButton.textContent = 'Add to Home';
     addButton.addEventListener('click', () => saveRecipeToLocalStorage(cardUrl, recipeId));

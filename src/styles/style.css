@@ -81,33 +81,33 @@ footer {
 }
 
 #stickyNotesContainer {
-    grid-template-columns: 2fr; /* Two equal columns */
-    gap: 20px; /* Space between sticky notes */
-    max-width: 800px; /* Container width */
-    margin: 20px auto; /* Center the container */
+    grid-template-columns: 2fr; 
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .sticky-note {
-    width: 100%; /* Make sure the sticky note takes full width of its grid cell */
+    width: 100%; 
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     color: #333;
-    background-color: white; /* Sticky note background color */
+    background-color: white;
     margin: 20px;
 }
 
 .sticky-note img.sticky-image {
-    max-width: 100%; /* Responsive image */
+    max-width: 100%;
     border-radius: 4px;
 }
 
 #recipeForm {
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    gap: 10px; /* Adds space between elements */
-    max-width: 400px; /* Optional: limits the width of the form */
-    margin: 0 auto; /* Optional: centers form on the page */
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto; 
 }
 
 .recipe-item {

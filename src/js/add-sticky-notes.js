@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Check the type and display accordingly
         if (recipe.type === 'create') {
-            // Display full details for locally created recipes
+            // Display the created recipe
             note.innerHTML = `
                 <h3>${recipe.title || ''}</h3>
                 <p>${recipe.description || 'No description provided.'}</p>
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="delete-btn">Delete</button>
             `;
         } else {
-            // Display only the card image for recipes fetched from the API
+            // Show the card image for recipes fetched from the API
             note.innerHTML = `
                 ${recipe.title ? `<h3>${recipe.title}</h3>` : ''}
                 ${recipe.cardUrl ? `<img src="${recipe.cardUrl}" alt="${recipe.title} Card Image" class="sticky-image">` : ''}
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Append each sticky note to the stickyNotesContainer
         stickyNotesContainer.appendChild(note);
 
-        // Attach event listener to delete button for each note
+        // Attach event listener to delete button for each note to remove from local storage
         const deleteButton = note.querySelector('.delete-btn');
         deleteButton.addEventListener('click', () => {
-            deleteSticky(recipe.title); // Remove from local storage
-            note.remove(); // Remove the note from the DOM
+            deleteSticky(recipe.title);
+            note.remove();
         });
     });
 });
